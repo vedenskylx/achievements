@@ -1,6 +1,5 @@
-# Ng6
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+# DigitalWand Achievements 
+Исходники для сборки frontend части для дальнейшей интеграции с rest-api в рамках стажировки.
 
 ## Development server
 
