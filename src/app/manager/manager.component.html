@@ -1,0 +1,74 @@
+<div class="Pane-content">
+    <div class="space-huge"></div>
+    <div media-wide="space-large" queryselectoralways="0" media-original="" class="space-large"></div>
+    <div class="contain-masthead align-center">
+        <div class="font-semp-xxLarge-white">Менеджер</div>
+        <div class="space-rhythm-medium"></div>
+        <div class="font-bliz-light-small-beige">
+            Время менеджера можно купить за золото, а единственный кодекс, которому он следует, — контракт. Менеджеры не мучаются угрызениями совести и поэтому используют жестокие и эффективные приемы. Будучи умелыми мерчендайзерами и мастерами переговоров, они способны подкрасться к цели внезапно, привести железный аргумент и исчезнуть, прежде чем оплата упадет на счет.
+        </div>
+    </div>
+    <div class="space-large"></div>
+    <div media-wide="space-large" queryselectoralways="0" media-original="" class="space-large"></div>
+    <div class="" media-large="!contain-medium contain-wide" media-huge="!contain-wide" queryselectoralways="0" media-original="contain-medium">
+        <div class="Grid Grid--gutters SyncHeight" queryselectoralways="46">
+            <div class="Grid-full Grid-1of2" media-large="Grid-1of2" queryselectoralways="0" media-original="Grid-full">
+
+                <div class="space-normal"></div>
+                <div class="Cards Cards--gutters Cards--1of3" media-huge="!Cards--stacked Cards--1of3" queryselectoralways="0" media-original="Cards Cards--gutters Cards--stacked">
+                    <div class="Card Card--borderPaper Cards-card">
+                        <a class="Card-link SyncHeight-item"  style="">
+                            <div class="Card-image">
+                                <div class="Card-image--full">
+                                    <div class="Art Card-art" queryselectoralways="4">
+                                        <div class="Art-size" style="padding-top:100%"></div>
+                                        <div class="Art-image" [ngStyle]="{'background-image' : 'url('+ manager.ava +')'}"></div>
+                                        <div class="Art-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="Card-image--half">
+                                    <div class="Art Card-art" queryselectoralways="4">
+                                        <div class="Art-size" style="padding-top:50%"></div>
+                                        <div class="Art-image" [ngStyle]="{'background-image' : 'url('+ manager.ava +')'}"></div>
+                                        <div class="Art-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Card-content">
+                                <div class="gutter-normal gutter-all">
+                                    <div class="Card-title">{{nickname ? nickname : manager.name}} <br> Очков достижений: {{points}}</div>
+                                    <p class="Card-description font-size-small font-size-xSmall" media-large="font-size-xSmall" queryselectoralways="0" media-original="Card-description font-size-small">{{manager.description}}</p>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="Cards Cards--gutters Cards--1of3" media-huge="!Cards--stacked Cards--1of3" queryselectoralways="0" media-original="Cards Cards--gutters Cards--stacked">
+                    <div class="Card Card--borderPaper Cards-card">
+                        <ul class="stats">
+                            <li *ngFor="let skill of manager.skills">
+                              <span class="skillText"> {{skill.name}} : {{skill.value}}</span> <progress value="{{skill.value}}" max="100"></progress>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Grid-full Grid-1of2" media-large="Grid-1of2" queryselectoralways="0" media-original="Grid-full">
+
+                <div class="space-normal"></div>
+                <div class="Cards Cards--gutters Cards--1of3" media-huge="!Cards--stacked Cards--1of3" queryselectoralways="0" media-original="Cards Cards--gutters Cards--stacked">
+                    <div class="Card Card--borderPaper Cards-card">
+                        <ul class="achives">
+                            <li *ngFor="let achievement of achievements">
+                              <img [src]="achievement.src" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

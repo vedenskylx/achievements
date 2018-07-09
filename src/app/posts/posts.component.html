@@ -1,0 +1,112 @@
+
+                <div class="Pane-content">
+                    <div class="space-huge"></div>
+                    <div media-wide="space-large" queryselectoralways="0" media-original="" class="space-large"></div>
+                    <div class="contain-masthead align-center">
+                        <div class="font-semp-xxLarge-white">Специализация</div>
+                        <div class="space-rhythm-medium"></div>
+                        <div class="font-bliz-light-small-beige">От выбора специализации зависит то, на чьей стороне вам придется сражаться в этой непрекращающейся войне. Верные защитники финансов или яростные воины кода — кто вам больше по душе
+                            <ins class="text-reset fontFamily-blizzard">?</ins>
+                        </div>
+                    </div>
+                    <div class="space-large"></div>
+                    <div media-wide="space-large" queryselectoralways="0" media-original="" class="space-large"></div>
+                    <div class="" media-large="!contain-medium contain-wide" media-huge="!contain-wide" queryselectoralways="0" media-original="contain-medium">
+                        <div class="Grid Grid--gutters SyncHeight" queryselectoralways="46">
+                            <div class="Grid-full Grid-1of2" media-large="Grid-1of2" queryselectoralways="0" media-original="Grid-full">
+                                <div class="Grid-full">
+                                    <div class="List List--center">
+                                        <div class="List-item">
+                                            <div class="font-title-large-onDark">Менеджеры</div>
+                                        </div>
+                                        <div class="List-item">
+                                            <div class="gutter-normal">
+                                                <div class="Logo Logo--smaller Logo--alliance"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-normal"></div>
+                                <div class="Cards Cards--gutters Cards--1of3" media-huge="!Cards--stacked Cards--1of3" queryselectoralways="0" media-original="Cards Cards--gutters Cards--stacked">
+                                    <div class="Card Card--borderPaper Cards-card" *ngFor="let manager of managers">
+                                        <a class="Card-link SyncHeight-item" routerLink="/manager/{{manager.id}}" style="">
+                                            <div class="Card-image">
+                                                <div class="Card-image--full">
+                                                    <div class="Art Card-art" queryselectoralways="4">
+                                                        <div class="Art-size" style="padding-top:100%"></div>
+                                                        <div class="Art-image" [ngStyle]="{'background-image' : 'url('+ manager.ava +')'}"></div>
+                                                        <div class="Art-overlay"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="Card-image--half">
+                                                    <div class="Art Card-art" queryselectoralways="4">
+                                                        <div class="Art-size" style="padding-top:50%"></div>
+                                                        <div class="Art-image" [ngStyle]="{'background-image' : 'url('+ manager.ava +')'}"></div>
+                                                        <div class="Art-overlay"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Card-content">
+                                                <div class="gutter-normal gutter-all">
+                                                    <div class="Card-title">{{manager.name}}</div>
+                                                    <p class="Card-description font-size-small font-size-xSmall" media-large="font-size-xSmall" queryselectoralways="0" media-original="Card-description font-size-small">{{manager.description}}</p>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Grid-full Grid-1of2" media-large="Grid-1of2" queryselectoralways="0" media-original="Grid-full">
+                                <div class="Grid-full">
+                                    <div class="List List--center">
+                                        <div class="List-item">
+                                            <div class="font-title-large-onDark">Разработчики</div>
+                                        </div>
+                                        <div class="List-item">
+                                            <div class="gutter-normal">
+                                                <div class="Logo Logo--smaller Logo--horde"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-normal"></div>
+                                <div class="Cards Cards--gutters Cards--1of3" media-huge="!Cards--stacked Cards--1of3" queryselectoralways="0" media-original="Cards Cards--gutters Cards--stacked">
+                                    <div class="Card Card--borderPaper Cards-card" *ngFor="let developer of developers">
+                                        <a class="Card-link SyncHeight-item" routerLink="/developer/{{developer.id}}" style="">
+                                            <div class="Card-image">
+                                                <div class="Card-image--full">
+                                                    <div class="Art Card-art" queryselectoralways="4">
+                                                        <div class="Art-size" style="padding-top:100%"></div>
+                                                        <div class="Art-image" [ngStyle]="{'background-image' : 'url('+ developer.ava +')'}"></div>
+                                                        <div class="Art-overlay"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="Card-image--half">
+                                                    <div class="Art Card-art" queryselectoralways="4">
+                                                        <div class="Art-size" style="padding-top:50%"></div>
+                                                        <div class="Art-image" [ngStyle]="{'background-image' : 'url('+ developer.ava +')'}"></div>
+                                                        <div class="Art-overlay"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Card-content">
+                                                <div class="gutter-normal gutter-all">
+                                                    <div class="Card-title">{{developer.name}}</div>
+                                                    <p class="Card-description font-size-small font-size-xSmall" media-large="font-size-xSmall" queryselectoralways="0" media-original="Card-description font-size-small">{{developer.description}}</p>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-normal"></div>
+                </div>
+                </div>
+
+
+
